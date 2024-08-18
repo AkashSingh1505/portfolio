@@ -211,7 +211,7 @@ html, body {
 
 .flex-data {
     position: relative;
-    margin-left: 15%;
+    margin-left: 12%;
     z-index: 2; /* Ensure content is above the overlay */
     flex: 1;
     padding: 15px;
@@ -486,6 +486,10 @@ html, body {
     height: 90px;
     overflow: hidden;
     margin-bottom: 5px;
+    color: #9298a1; 
+    font-weight: 100px;
+    font-size: 0.80rem;
+    overflow: hidden; */
 }
 
 .home-page .card:hover {
@@ -535,20 +539,13 @@ html, body {
     color: #9ca3ad; 
 }
 
-.home-page .card-subtitle {
-    color: #9298a1; /* Set subtitle color to #9ca3ad */
-    font-weight: lighter;
-    font-size: 0.81rem;
-    overflow: hidden;
-}  
-
 
 .projects-page .card-subtitle{
     color: #9298a1; /* Set subtitle color to #9ca3ad */
-    font-weight: lighter;
+    font-weight: 100px;
     line-height: 1.4;
     overflow: hidden;
-    font-size: 0.81rem;
+    font-size: 0.80rem;
     height: 90px;
 }
 
@@ -605,7 +602,7 @@ html, body {
 }
 
 .skills-page .card-bottomTitle {
-    color: #9ca3ad; /* Set subtitle color to #9ca3ad */
+    color: #9da4ad; /* Set subtitle color to #9ca3ad */
     font-weight: 100;
     line-height: 1.2;
     margin-top: 25px;
