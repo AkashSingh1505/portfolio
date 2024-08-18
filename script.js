@@ -209,7 +209,7 @@ const projects = [
         "projectYear": 2024,
         "name": "Portfolio",
         "description": "To effectively showcase your projects, skills, and achievements, I developed a portfolio website that digitizes and presents your professional journey in a modern, engaging way. This platform is designed to offer a comprehensive view of your work, including detailed project overviews, skill highlights, and notable achievements. Leveraging advanced web technologies, the website ensures a responsive experience and serves as a dynamic tool for potential collaborations and opportunities.",
-        "thumbnail": "https://user-images.githubusercontent.com/29167110/186957508-87dea230-3c26-4424-b21c-cee732a7841b.png",
+        "thumbnail": "../res/portfolio_thumbnail.png",
         "category": "website",
         "tags": [
             "Portfolio",
@@ -219,11 +219,12 @@ const projects = [
             "JavaScript",
             "Responsive Design"
         ],
-        "link": "https://github.com/AkashSingh1505/DSA_basic-advanced_algos_and_Java_core_concept_Impl",
+        "link": "https://github.com/AkashSingh1505/portfolio",
         "images": [
-            "https://user-images.githubusercontent.com/29167110/portfolio-thumbnail.png",
-            "https://user-images.githubusercontent.com/29167110/portfolio-screenshot1.png",
-            "https://user-images.githubusercontent.com/29167110/portfolio-screenshot2.png"
+           "../res/portfolio_sc1.png",
+           "../res/portfolio_sc2.png",
+           "../res/portfolio_sc3.png",
+
         ],
         "videos": [
             {
