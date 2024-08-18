@@ -447,8 +447,9 @@ function filterProjects(category) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // loadProjectDetails();
    
+    if (window.location.pathname.includes('allProjects.html')) {
+        filterProjects('all');
         const menuItems = document.querySelectorAll('.menu-item');
     
         menuItems.forEach(menuItem => {
@@ -462,16 +463,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuItem.classList.add('active');
             });
         });
-        // filterProjects('all');
-    // }
-    if (window.location.pathname.includes('allProjects.html')) {
-        filterProjects('all');
         document.getElementById('allProjects').classList.add('active');
 
-    }else if(window.location.pathname.includes('index.html')){
-        loadHomePage();
+    }else if(window.location.pathname.includes('skills.html')){
+        
     }else if(window.location.pathname.includes('projectDetails.html')){
         loadProjectDetails();
+    }else{
+        loadHomePage();
     }
     
 });
