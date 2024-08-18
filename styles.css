@@ -486,7 +486,7 @@ html, body {
     height: 90px;
     overflow: hidden;
     margin-bottom: 5px;
-    color: #585757;
+    color: #8d8b8b;
     font-weight: 100px;
     font-size: 0.80rem;
     overflow: hidden; */
@@ -541,7 +541,7 @@ html, body {
 
 
 .projects-page .card-subtitle{
-    color: #585757; /* Set subtitle color to #9ca3ad */
+    color: #8d8b8b; /* Set subtitle color to #9ca3ad */
     font-weight: 100px;
     line-height: 1.4;
     overflow: hidden;
@@ -592,8 +592,8 @@ html, body {
     color: black; /* Set title color to black */
 }
 
-.card-subtitle {
-    color: #585757; /* Set subtitle color to #9ca3ad */
+.skills-page .card-subtitle {
+    color: #8d8b8b; /* Set subtitle color to #9ca3ad */
     font-weight: 100px;
     height: 150px;
     overflow: hidden;
@@ -602,7 +602,7 @@ html, body {
 }
 
 .skills-page .card-bottomTitle {
-    color: #585757;; /* Set subtitle color to #9ca3ad */
+    color: #9e9d9d;; /* Set subtitle color to #9ca3ad */
     font-weight: 100;
     line-height: 1.2;
     margin-top: 25px;
@@ -635,7 +635,7 @@ html, body {
 }
 
 .tile-description {
-    color: #9ca3ad; /* Set subtitle color to #9ca3ad */
+    color: #757474; /* Set subtitle color to #9ca3ad */
     font-weight: lighter;
     line-height: 1.3;
 }
