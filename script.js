@@ -226,14 +226,7 @@ const projects = [
            "../res/portfolio_sc3.png",
 
         ],
-        "videos": [
-            {
-                "url": "https://www.youtube.com/embed/yourportfoliovideo",
-                "mute": true,
-                "loop": true,
-                "autoPlay": true
-            }
-        ]
+        "videos": null
     }
     
     
@@ -454,7 +447,7 @@ function filterProjects(category) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadProjectDetails();
+    // loadProjectDetails();
    
         const menuItems = document.querySelectorAll('.menu-item');
     
@@ -477,6 +470,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }else if(window.location.pathname.includes('index.html')){
         loadHomePage();
+    }else if(window.location.pathname.includes('projectDetails.html')){
+        loadProjectDetails();
     }
     
 });
