@@ -475,7 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
         filterProjects('all');
         document.getElementById('allProjects').classList.add('active');
 
-    }else if(window.location.pathname.includes('home.html')){
+    }else if(window.location.pathname.includes('index.html')){
         loadHomePage();
     }
     
