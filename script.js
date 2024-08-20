@@ -26,6 +26,30 @@ const projects = [
             }
         ]
     },
+   
+    {
+        "id": 3,
+        "projectYear": 2023,
+        "name": "Background Location Service with Activity Recognition",
+        "description": "A powerful Android library providing seamless background location services with dynamic interval adjustments based on user activities like 'Still,' 'Walk,' 'Run,' and 'Vehicle,' optimizing performance and battery usage. This Android library is designed for developers seeking reliable background operation and flexible configuration.",
+        "thumbnail": "../res/locationService_thumbnail.png",
+        "category": "android",
+        "tags": ["Android Library", "Background Service", "Activity Recognition", "Location Service"],
+        "link": "https://github.com/AkashSingh1505/Location_BG_service_with_ARF",
+        "images": [
+            "../res/location_sc2.png",
+            "../res/location_sc1.png",
+        ],
+        "videos": [
+            {
+                "url": "https://github.com/AkashSingh1505/Location_BG_service_with_ARF/assets/139606462/2d0c38f2-390f-452a-8351-c39993185245",
+                "mute": true,
+                "loop": true,
+                "autoPlay": true
+            }
+        ]
+    },
+
     {
         "id": 2,
         "projectYear": 2022,
@@ -50,28 +74,25 @@ const projects = [
             }
         ]
     },
+
     {
-        "id": 3,
+        "id": 5,
         "projectYear": 2023,
-        "name": "Background Location Service with Activity Recognition",
-        "description": "A powerful Android library providing seamless background location services with dynamic interval adjustments based on user activities like 'Still,' 'Walk,' 'Run,' and 'Vehicle,' optimizing performance and battery usage. This Android library is designed for developers seeking reliable background operation and flexible configuration.",
-        "thumbnail": "../res/locationService_thumbnail.png",
-        "category": "android",
-        "tags": ["Android Library", "Background Service", "Activity Recognition", "Location Service"],
-        "link": "https://github.com/AkashSingh1505/Location_BG_service_with_ARF",
+        "name": "Excel Clone",
+        "description": "The Excel Clone is a web and Android application built using Kotlin for the backend and HTML, CSS, and JavaScript for the frontend. It replicates the functionality of an Excel sheet, allowing users to input and manipulate data with customizable text formatting, including size, color, style, and alignment. The app also includes basic editing functions like cut, copy, and paste, and allows users to save their data in a JSON format for further processing.",
+        "thumbnail": "../res/excelClone_thumbnail.png",
+        "category": "webApp",
+        "tags": ["Web App","Kotlin", "Android", "Excel Clone", "HTML", "CSS", "JavaScript"],
+        "link": "https://github.com/AkashSingh1505/ExcelSheet_Clone_App",
         "images": [
-            "../res/location_sc2.png",
-            "../res/location_sc1.png",
+            "../res/excel_sc3.png",
+           "../res/excel_sc1.png",
+           "../res/excel_sc2.png",
+           
         ],
-        "videos": [
-            {
-                "url": "https://github.com/AkashSingh1505/Location_BG_service_with_ARF/assets/139606462/2d0c38f2-390f-452a-8351-c39993185245",
-                "mute": true,
-                "loop": true,
-                "autoPlay": true
-            }
-        ]
+        "videos": null
     },
+    
     {
         "id": 4,
         "projectYear": 2023,
@@ -86,22 +107,7 @@ const projects = [
         ],
         "videos": null
     },
-    {
-        "id": 5,
-        "projectYear": 2023,
-        "name": "Excel Clone",
-        "description": "The Excel Clone is a web and Android application built using Kotlin for the backend and HTML, CSS, and JavaScript for the frontend. It replicates the functionality of an Excel sheet, allowing users to input and manipulate data with customizable text formatting, including size, color, style, and alignment. The app also includes basic editing functions like cut, copy, and paste, and allows users to save their data in a JSON format for further processing.",
-        "thumbnail": "../res/excelClone_thumbnail.png",
-        "category": "webApp",
-        "tags": ["Web App","Kotlin", "Android", "Excel Clone", "HTML", "CSS", "JavaScript"],
-        "link": "https://github.com/AkashSingh1505/ExcelSheet_Clone_App",
-        "images": [
-           "../res/excel_sc1.png",
-           "../res/excel_sc2.png",
-           "../res/excel_sc3.png",
-        ],
-        "videos": null
-    },
+    
     {
         "id": 6,
         "projectYear": 2022,
@@ -318,7 +324,11 @@ function loadHomePage(){
     const container = document.getElementById('feature-project');
     container.innerHTML = '';
     let filteredProjects = projects.filter(project => project.link.includes("github.com"));
+    let count = 0;
     filteredProjects.forEach(project => {
+        if(count>=4){
+            return;
+        }
         const projectCard = `
         <div class="card">
             <img src="res/${project.thumbnail}" alt="Card Image" class="card-img-top">
@@ -329,6 +339,7 @@ function loadHomePage(){
         </div>
         `;
         container.innerHTML += projectCard;
+        count++
     });
 
 }
