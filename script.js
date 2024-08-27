@@ -265,9 +265,9 @@ function getQueryParam(param) {
 }
 
 // Function to open project details (from the main page)
-function openProjectDetail(projectId) {
+function openProjectDetail(projectId,pathname) {
     // Navigate to the project details page with the projectId as a URL parameter
-    window.location.href = `projectDetails.html?projectId=${projectId}`;
+    window.location.href = `${pathname}projectDetails.html?projectId=${projectId}`;
 }
 
 function updateElementContent(elementId, data, prefix = '') {
@@ -330,7 +330,10 @@ function loadHomePage(){
             return;
         }
         const projectCard = `
-        <div class="card">
+       <div class="card" data-project-id="${project.id}">
+       <div class="star-icon">
+                <img src="res/featured_icon.png" alt="Star Icon">
+            </div>
             <img src="res/${project.thumbnail}" alt="Card Image" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">${project.name}</h5>
@@ -340,6 +343,15 @@ function loadHomePage(){
         `;
         container.innerHTML += projectCard;
         count++
+        
+    });
+
+      // Add click event listener to each card
+     document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            const projectId = e.currentTarget.dataset.projectId;
+            openProjectDetail(projectId,"project pages/");
+        });
     });
 
 }
@@ -436,7 +448,7 @@ function renderProjects(filteredProjects) {
      document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('click', (e) => {
             const projectId = e.currentTarget.dataset.projectId;
-            openProjectDetail(projectId);
+            openProjectDetail(projectId,"");
         });
     });
 

@@ -466,20 +466,19 @@ html, body {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px; /* Add space between cards */
     justify-content: center; /* Center cards horizontally */
-    overflow: hidden;
 }
 
 .home-page .card {
+    position: relative;
     background: white;
     transition: 0.3s;
-    overflow: hidden;
     border-radius: 10px; /* Apply rounded corners to the card */
-    overflow: hidden; /* This is for the hover effect */
     width: 100%; /* Ensure card takes full width of grid item */
     max-width: 500px; /* Set maximum card width */
     height: auto; /* Allow card height to adjust based on content */
     margin: 0; /* Remove any margin */
     padding: 16px; /* Add padding to the card content */
+    position: relative;
 }
 
 .home-page .card-subtitle{
@@ -493,8 +492,8 @@ html, body {
 }
 
 .home-page .card:hover {
-    /* transform: translateY(-3px);  */
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); */
+    transform: translateY(-3px);  
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); 
 }
 
 .projects-page .card {
@@ -738,3 +737,19 @@ a {
     color: #0c0c0c;
     font-size: 15px;
 }
+
+
+
+.star-icon {
+    position: absolute;
+    top: -15px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+}
+
+.star-icon img {
+    width: 100%;
+    height: 100%;
+}
+
