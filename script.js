@@ -149,7 +149,7 @@ const projects = [
         "thumbnail": "../res/hicare_thumbnail.png",
         "category": "android",
         "tags": ["Android - Kotlin", "Best Practices", "Pest Control", "Big Audience"],
-        "link": "https://play.google.com/store/apps/details?id=com.example.hicare",
+        "link": "https://play.google.com/store/apps/details?id=com.hicare.audit2",
         "images": [
             "../res/hicare_sc1.png",
         ],
@@ -163,7 +163,7 @@ const projects = [
         "thumbnail": "../res/aarogyahaat_thumbnail.png",
         "category": "android",
         "tags": ["Android - Kotlin", "Healthcare", "HealthConnect Integration"],
-        "link": "https://play.google.com/store/search?q=aarogyahat&c=apps&hl=en_IN&gl=US",
+        "link": "https://play.google.com/store/apps/details?id=com.finhaat.aarogyahaat",
         "images": [
             "../res/aarogyahaat_sc1.png",
             "../res/aarogyahaat_sc2.png",
